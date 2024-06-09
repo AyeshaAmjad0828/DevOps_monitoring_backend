@@ -4,7 +4,7 @@
   "description": "A node app for monitoring purposes",
   "main": "app.ts",
   "scripts": {
-    "start": "nodemon app.ts",
+    "start": "npx nodemon app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
