@@ -16,5 +16,8 @@ RUN npm install -g npm@latest && npm cache clean --force && npm install
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
 
+# Run migrations
+RUN npx prisma migrate deploy
+
 # Run the app when the container launches
 CMD ["npm", "start"]
